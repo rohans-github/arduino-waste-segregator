@@ -10,6 +10,10 @@ Rohan Chadha
 
 This project presents an intelligent waste segregation system that automatically classifies waste into three categories: **dry**, **wet**, and **metallic** using sensors and motors. The system addresses environmental concerns around manual waste handling by introducing automation, increasing efficiency, and reducing contamination in recycling workflows.
 
+<p align="center">
+  <img src="images/full_project.jpg" />
+</p>
+
 ### Key Statistics
 - Only 30% of waste is properly segregated globally
 - Automated systems can improve accuracy by 85%
@@ -34,6 +38,13 @@ This project presents an intelligent waste segregation system that automatically
 
 ---
 
+## Hardware Setup
+
+**Circuit Diagram:**
+### ![Circuit Diagram](images/schematic.jpg)
+
+---
+
 ## Software Libraries
 
 ### CheapStepper Library
@@ -53,6 +64,10 @@ Standard Arduino library for controlling the 9g servo motor. Enables angle-based
 4. Servo opens gate to release waste
 5. Returns to home position
 
+<p align="center">
+  <img src="images/metal_detector.jpg" />
+</p>
+
 ### Mode 2: Automatic Classification
 1. IR sensor detects incoming waste
 2. Moisture sensor takes 3 readings and averages them
@@ -60,6 +75,10 @@ Standard Arduino library for controlling the 9g servo motor. Enables angle-based
 4. If moisture ≤ 20%: Routes to dry waste bin (home position)
 5. Servo releases waste into appropriate bin
 6. System returns to ready state
+
+<p align="center">
+  <img src="images/moisture_sensor.jpg" />
+</p>
 
 ---
 
@@ -76,6 +95,10 @@ Standard Arduino library for controlling the 9g servo motor. Enables angle-based
 ---
 
 ## Custom Design Elements
+
+<p align="center">
+  <img src="images/top_view.jpg" />
+</p>
 
 ### Mechanical Integration
 - **Bin Rotation Mechanism**: Custom mounting system attaching stepper motor shaft adapter to rotating platform holding three waste bins, requiring precise mechanical alignment for smooth rotation
